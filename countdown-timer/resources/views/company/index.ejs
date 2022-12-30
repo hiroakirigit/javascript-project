@@ -1,0 +1,15 @@
+<% var myValue = 'This is company page from EJS1'; %>
+<% var myTitle = 'This is company page from EJSsss'; %>
+
+<%- include( '../include/_header.ejs', {myTitle} ); %>
+<div id="main">
+    <p><%= myValue %></p>
+    <p>this is accessaaaa</p>
+    <a href="/access/">ACCESS</a>
+    <a href="/company/">COMPANY</a>
+    <div>
+        <img src="../../assets/images/company/building.jpg" alt="">
+    </div>
+</div>
+
+<%- include( '../include/_footer.ejs' ); %>

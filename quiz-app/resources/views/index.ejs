@@ -1,0 +1,28 @@
+<% var myValue = 'This is Quiz App'; %>
+<% var myTitle = 'This is Quiz App'; %>
+
+<%- include( 'include/_header.ejs', {myTitle} ); %>
+
+
+<div class="quiz-container h-screen flex flex-col justify-center items-center">
+    <h1 class="text-center text-5xl mb-6">Quiz App</h1>
+    <div class="quiz-container-inner shadow-lg shadow-cyan-400/50 w-2/4 borer-2 border-zinc-400 border-1 rounded-md border-solid pt-5">
+        <h2 class="text-3xl mb-2 pl-5 pr-5" id="quiz">Question text</h2>
+        <ul class="answer-list mb-5 pl-5 pr-5">
+            <li class="mt-1 text-xl flex items-center"><input type="radio" name="answer" id="a"><label for="a" id="a_text" class="answer">Lorem Ipsum</label></li>
+            <li class="mt-1 text-xl flex items-center"><input type="radio" name="answer" id="b"><label for="b" id="b_text" class="answer">Lorem Ipsum</label></li>
+            <li class="mt-1 text-xl flex items-center"><input type="radio" name="answer" id="c"><label for="c" id="c_text" class="answer">Lorem Ipsum</label></li>
+            <li class="mt-1 text-xl flex items-center"><input type="radio" name="answer" id="d"><label for="d" id="d_text" class="answer">Lorem Ipsum</label></li>
+        </ul>
+        <button class="w-full mt-4 p-4 rounded-br-md rounded-bl-md text-center bg-cyan-300" id="submit">Answer</button>
+        <div class="correct"></div>
+        <div class="incorrect"></div>
+    </div>
+
+</div>
+<div id="particles-js"></div>
+<div class="quiz-finished">
+    <p class="text-center text-5xl mb-6">You finished Quiz!!</h1>
+</div>
+
+<%- include( 'include/_footer.ejs' ); %>

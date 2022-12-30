@@ -1,0 +1,29 @@
+<% var myValue = 'This is top page from EJS1'; %>
+<% var myTitle = 'This is top page from EJSsss'; %>
+
+<%- include( 'include/_header.ejs', {myTitle} ); %>
+
+
+<div class="main-wrapper flex flex-col justify-center items-center">
+    <h1 class="text-6xl text-center font-bold mb-20">A New Year Is Coming</h1>
+    <div class="countdown-container flex justify-center gap-x-20 gap-y-20 ">
+        <div class="days-c flex flex-col text-5xl">
+            <p class="big-text" id="days">0</p>
+            <span class="text-lg">days</span>
+        </div>
+        <div class="hours-c flex flex-col text-5xl">
+            <p class="big-text" id="hours">0</p>
+            <span class="text-lg">hours</span>
+        </div>
+        <div class="minutes-c flex flex-col text-5xl">
+            <p class="big-text" id="minutes">0</p>
+            <span class="text-lg">min</span>
+        </div>
+        <div class="seconds-c flex flex-col text-5xl">
+            <p class="big-text" id="seconds">0</p>
+            <span class="text-lg">seconds</span>
+        </div>
+    </div>
+</div>
+
+<%- include( 'include/_footer.ejs' ); %>
