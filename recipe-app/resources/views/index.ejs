@@ -1,0 +1,20 @@
+<% var myValue = 'This is Recipe Sample'; %>
+<% var myTitle = 'This is Recipe Sample'; %>
+
+<%- include( 'include/_header.ejs', {myTitle} ); %>
+
+<div class="main">
+    <div class="main__favorite p-5 shadow-xl ">
+        <ul class="main__favorite__list flex gap-5 overflow-x-auto">
+            <li class="notice">There is no registered item here.<br> If you want to register, please click heart icon whatever you like.</li>
+        </ul>
+    </div>
+    <div class="main__recipe w-full">
+        <div class="main__recipe__inner p-5 pb-20 ">
+            <ul class="main__recipe__list grid gap-10 sm:grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-10">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<%- include( 'include/_footer.ejs' ); %>
